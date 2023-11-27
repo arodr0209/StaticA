@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the webpage -->
+    <title>Static X</title>
+</head>
+<body>
+    <!-- main content -->
+    <h1>Static X</h1>
+    <p>Code Analyzer</p>
+    
+    <!-- form for code input and submission -->
+    <form action="/analyze" method="post">
+        <label for="code">Enter your code:</label><br>
+        <!-- multiline code input -->
+        <textarea name="code" id="code" rows="10" cols="50"></textarea><br>
+        <!-- submit button to trigger the code analysis -->
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

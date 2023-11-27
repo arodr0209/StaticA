@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static X</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Static X</h1>
+    <p>Pylint Code Analysis Results</p>
+
+    <!-- display the code -->
+    <h2>Code Entered:</h2>
+    <pre>{{ code }}</pre>
+
+    <!-- display the content of pylint_output.txt -->
+    <h2>Pylint Output:</h2>
+    <pre>{{ analysis_result.get('pylint_output_content', 'Not available') }}</pre>
+
+    <!-- back button -->
+    <button onclick="history.back()" class="back-button">Go Back</button>
+</body>
+</html>
